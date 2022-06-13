@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hora Actual</h1>
+
+    <script>
+        
+        let date = new Date();
+        //Getday funciona como el calendario ingles primer dia es : Domingo
+        const dia = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+        let actual = date.getDay();
+        let diaactual = dia[actual];
+        //Alerta del dia que es actualmente segun getDay.
+        alert(`Hoy es: ` + diaactual)
+
+    </script>
+</body>
+</html>
